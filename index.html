@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eman Nabil | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f8fc;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #101b35;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            color: #e7bd67;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 8px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #e7bd67;
+        }
+
+        .hero {
+            background: #101b35;
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #e7bd67;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 0 auto 25px;
+            color: #e0e4ee;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #e7bd67;
+            color: #101b35;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 55px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #101b35;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        .section-title span {
+            color: #c49332;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px #101b3510;
+            border-bottom: 3px solid #e7bd67;
+        }
+
+        .card h3 {
+            color: #101b35;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            text-align: center;
+            background: #e9edf5;
+        }
+
+        footer {
+            background: #101b35;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Eman Nabil</h2>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#cv">CV</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Hello, I'm <span>Eman Nabil</span></h1>
+        <p>
+            Information Systems Student
+            <br>
+            Interested in web development, technology, and learning new skills.
+        </p>
+        <a class="btn" href="#about">Discover My Portfolio</a>
+    </div>
+
+    <section id="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about">
+            <p>
+                I am an Information Systems student who is building
+                my knowledge of programming and web development.
+                I have studied HTML and CSS and practiced basic
+                programming exercises. I enjoy learning, solving
+                problems, and improving my technical skills.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="cards">
+            <div class="card">
+                <h3>HTML</h3>
+                <p>Basic knowledge of creating and structuring web pages.</p>
+            </div>
+
+            <div class="card">
+                <h3>CSS</h3>
+                <p>Basic knowledge of styling and organizing website layouts.</p>
+            </div>
+
+            <div class="card">
+                <h3>Python</h3>
+                <p>Beginner knowledge of programming fundamentals.</p>
+            </div>
+
+            <div class="card">
+                <h3>Information Systems</h3>
+                <p>Academic knowledge of systems analysis and design.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Ticket Reservation System</h3>
+                <p>
+                    An academic project focused on analyzing and
+                    designing a ticket reservation system.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                    A personal website built with HTML and CSS
+                    to present my skills and academic projects.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cv">
+        <h2 class="section-title">My <span>CV</span></h2>
+        <div class="about">
+            <p>
+                Education: Information Systems
+                <br>
+                Technical Skills: HTML, CSS, and basic Python
+                <br>
+                Experience: Academic exercises and college projects
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        <p>
+            Thank you for visiting my portfolio.
+            I am always interested in learning and developing my skills.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Eman Nabil | Personal Portfolio</p>
+    </footer>
+
+</body>
+</html>
